@@ -1,0 +1,8 @@
+<form action="/updateproduct" method="post">
+
+Product Name<input type="text" name="name" value="{{results.product_name}}">
+Product Price<input type="text" name="price"  value="{{results.product_price}}">
+<input type="hidden" value={{results.product_id}} name="id"/>
+<input type="Submit" value="submit">
+
+</form>

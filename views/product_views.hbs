@@ -1,0 +1,25 @@
+<a href="http://localhost:8000/productadd">Add new product</a>
+<hr>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product ID</th>
+             <th>Prodcut Name</th>
+              <th>Price</th>
+               <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each results}}
+        <tr>
+            <td>{{ product_id}}</td>
+            <td>{{ product_name}}</td>
+            <td>{{ product_price}}</td>
+            <td><a href="http://localhost:8000/productdelete/{{product_id}}">Delete</a>
+            <a href="http://localhost:8000/productedit/{{product_id}}">Edit</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
